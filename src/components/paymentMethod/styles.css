@@ -1,0 +1,157 @@
+.PaymentMethod{
+    height: 500px;
+}
+
+.Payment-method-buttons{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 20px;
+    column-gap: 15px;
+}
+
+.Payment-method-header{
+    padding-bottom: 10px;
+}
+
+.card-number{
+    flex: 1;
+}
+
+.payment-button{
+  background-color: #FFFFFF ;
+  border: 1px solid #E0E0E0;
+
+  color: #0066ff;
+  padding: 10px 70px;
+  border-radius: 7px;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.payment-button.active{
+  background-color: #0066ff;
+  color: white;
+}
+
+.terms-wrapper{
+    display: flex;
+    flex-direction: row;
+    border: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding : 10px;
+    border: 1px solid #E0E0E0;
+    
+}
+
+.place-order-button{
+    width: 100%;
+    background-color:#FF5319;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: row;
+    -webkit-appearance: none;
+}
+
+.input-box1{
+    display: flex;
+    flex-direction: column;
+    -webkit-appearance: none;
+    width:50%;
+    padding:10px 50px 10px 10px;
+    border: 1px solid #ddd;
+   
+}
+
+.input-box2{
+    display: flex;
+    flex-direction: column;
+    -webkit-appearance: none;
+    width:50%;
+     margin:0px 0px 0px 50px; 
+}
+
+input{
+padding: 10px;
+}
+
+.validity-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    width: 50%;
+
+}
+
+.validity-container{
+    margin-top: 10px;
+}
+
+.validity{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+   
+}
+
+/* .cvv-cvc{
+
+} */
+
+.cvv-cvc-input{
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    -webkit-appearance: none;
+}
+
+.gift-card-Container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    -webkit-appearance: none;
+    
+}
+
+
+.modal-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    -webkit-appearance: none;
+    border: 1px solid #ddd;  
+}
+
+.modal-button{
+    background-color: #FFFFFF ;
+    border: 1px solid #E0E0E0;
+  
+    color: #0066ff;
+    padding: 10px 70px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+  
+    font-size: 20px;
+    cursor: pointer;
+  }

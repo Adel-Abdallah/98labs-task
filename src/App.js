@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState ,useEffect } from 'react';
+import Checkout from './components/checkout';
+import PaymentMethod from './components/paymentMethod';
 
 function App() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+  fetch('https://fakestoreapi.com/products?limit=5')
+            .then(res=>res.json())
+            .then(data=>{ setProducts(data)})
+            .then(json=>console.log(json))
+            .catch(err=>console.log(err))
+  },[])
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div className='logo'>
+
+      <img src={require('./98labs.png')} alt="98lab"/>
+     </div>
+     <Checkout  products={products} setProducts={setProducts}/>
+      <PaymentMethod products={products} setProducts={setProducts}/>
+
+
     </div>
   );
 }
